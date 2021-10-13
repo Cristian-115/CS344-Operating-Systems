@@ -1,0 +1,14 @@
+﻿  Build command not configured, skipping.
+  Invoking 'make', working directory: '/nfs/stak/users/garibcri/vsprojects/assign2'
+  gcc --std=gnu99 -g -Wall  -c -o build/main.o main.c
+  main.c: In function ‘findLargestFile’:
+  main.c:168:3: warning: function returns address of local variable [-Wreturn-local-addr]
+     return entryName;
+     ^
+  main.c: In function ‘findSmallestFile’:
+  main.c:206:3: warning: function returns address of local variable [-Wreturn-local-addr]
+     return entryName;
+     ^
+  
+  gcc -o ./assign2 build/main.o  
+  

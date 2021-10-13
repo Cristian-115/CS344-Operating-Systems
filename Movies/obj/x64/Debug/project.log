@@ -1,0 +1,16 @@
+﻿  Build command not configured, skipping.
+  Invoking 'make', working directory: '/nfs/stak/users/garibcri/vsprojects/assign1'
+  gcc --std=gnu99 -g -Wall  -c -o build/main.o main.c
+  main.c: In function ‘bubbleSort’:
+  main.c:187:17: warning: implicit declaration of function ‘swap’ [-Wimplicit-function-declaration]
+                   swap(ptr1, ptr1->next);
+                   ^
+  main.c: At top level:
+  main.c:212:6: warning: conflicting types for ‘swap’ [enabled by default]
+   void swap(struct movie* movie1, struct movie* movie2) {
+        ^
+  main.c:187:17: note: previous implicit declaration of ‘swap’ was here
+                   swap(ptr1, ptr1->next);
+                   ^
+  gcc -o ./assign1 build/main.o  
+  
